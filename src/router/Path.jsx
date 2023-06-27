@@ -31,7 +31,9 @@ const Path = () => {
           <RouteGuard>
             <div
               className={`${
-                sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+                sideSelector
+                  ? " duration-500 sm:ml-[200px]"
+                  : " duration-500 ml-0"
               }`}
             >
               <Dashboard />
@@ -39,13 +41,15 @@ const Path = () => {
           </RouteGuard>
         }
       />
-      {/* ml-[200px] */}
+      {/* sm:ml-[200px] */}
       <Route
         path="/clients"
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Clients />
@@ -60,7 +64,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Profiles />
@@ -72,7 +78,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Social />
@@ -84,7 +92,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Setting />
@@ -96,7 +106,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Invoice />
@@ -108,7 +120,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Price />
@@ -120,7 +134,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Task />
@@ -132,7 +148,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Message />
@@ -144,7 +162,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <List />
@@ -156,7 +176,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Detail />
@@ -168,7 +190,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Data />
@@ -180,7 +204,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Form />
@@ -192,7 +218,9 @@ const Path = () => {
         element={
           <div
             className={`${
-              sideSelector ? " duration-500 ml-[200px]" : " duration-500 ml-0"
+              sideSelector
+                ? " duration-500 sm:ml-[200px]"
+                : " duration-500 ml-0"
             }`}
           >
             <Analytics />

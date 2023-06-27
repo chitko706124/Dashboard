@@ -194,7 +194,7 @@ export function Navbar() {
         pathReaction !== true &&
         path.pathname !== "/signup"
           ? `${`px-[10px] h-[69.09px] z-30 max-h-[69.09px]   !mb-0 relative block ${
-              sideSelector === false ? "duration-[500ms] ml-0" : " ml-[200px] duration-[500ms]"
+              sideSelector === false ? "duration-[500ms] ml-0" : " sm:ml-[200px] duration-[500ms]"
             }`}`
           : "hidden"
       }`}

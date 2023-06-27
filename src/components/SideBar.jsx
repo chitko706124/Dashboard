@@ -166,7 +166,7 @@ export function SideBar() {
           token && path.pathname !== "/signin" && path.pathname !== "/signup"
             ? ` h-screen z-50 block bg-darkBlue text-white shadow
       ${sideSelector ? "sideAni  " : "  sideRight"}
-       p-5 !overflow-y-auto min-w-[200px]  !absolute   top-0 left-0 
+       p-5 !overflow-y-auto min-w-[200px]  !fixed   top-0 left-0 
        ${sideSelector ? "-left-[-0%]" : "-left-[120%]"}`
             : " hidden"
         }
@@ -188,7 +188,7 @@ export function SideBar() {
             />
           )}
           <div className=" flex justify-center items-center">
-            <div className=" flex justify-center gap-3">
+            <div className=" flex justify-between  gap-3">
               <svg
                 fill="#4a88eb"
                 version="1.1"
@@ -216,6 +216,9 @@ export function SideBar() {
                 ></path>
               </svg>
               <p className=" text-white h-1 font-bold">AppStack</p>
+              <p className=" text-white text-[20px] sm:hidden ">
+                <AiOutlineClose onClick={()=> dispatch(toggle())}/>
+              </p>
             </div>
           </div>
           {/* <Code sx={{ fontWeight: 700 }}>v3.1.2</Code> */}
