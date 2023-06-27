@@ -57,7 +57,6 @@ const mockdata = [
     child: [
       { label: "SignIn", link: "/signin" },
       { label: "SignUp", link: "/signup" },
-    
     ],
     subChild: [
       { label: "Overview", link: "/" },
@@ -166,8 +165,8 @@ export function SideBar() {
         ${
           token && path.pathname !== "/signin" && path.pathname !== "/signup"
             ? ` h-screen z-50 block bg-darkBlue text-white shadow
-      ${sideSelector ? " sideAni" : "w-0 hidden sideRight"}
-       p-5 !overflow-y-auto min-w-[200px] w-[15%] !sticky top-0 left-0
+      ${sideSelector ? "sideAni  " : "  sideRight"}
+       p-5 !overflow-y-auto min-w-[200px]  !absolute   top-0 left-0 
        ${sideSelector ? "-left-[-0%]" : "-left-[120%]"}`
             : " hidden"
         }

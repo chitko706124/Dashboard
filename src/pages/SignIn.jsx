@@ -62,7 +62,7 @@ const SignIn = () => {
       {" "}
       <div className="flex flex-col w-[80%] md:w-[80%] lg:w-[30%] h-[fit-content] gap-2">
         <div className=" flex justify-center flex-col align-middle items-center mt-4 md:mt-0">
-          <h2 className=" text-2xl font-semibold ">Welcome back!</h2>
+          <h2 className=" text-2xl font-semibold ">Welcome</h2>
           <p>Sign in to your account to continue</p>
         </div>
         <form

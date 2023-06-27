@@ -189,8 +189,13 @@ export function Navbar() {
     <Header
       height={59}
       className={`${
-        token && path.pathname !== "/signin" && path.pathname !== "/signup"
-          ? `${"px-[10px] h-[69.09px] max-h-[69.09px] !mb-0 relative block"}`
+        token &&
+        path.pathname !== "/signin" &&
+        pathReaction !== true &&
+        path.pathname !== "/signup"
+          ? `${`px-[10px] h-[69.09px] z-30 max-h-[69.09px]   !mb-0 relative block ${
+              sideSelector === false ? "duration-[500ms] ml-0" : " ml-[200px] duration-[500ms]"
+            }`}`
           : "hidden"
       }`}
       mb={120}
@@ -242,7 +247,7 @@ export function Navbar() {
           <div className=" col-start-3 col-span-3">
             <Menu
               withArrow
-              position="bottom"
+              position="bottom-start"
               arrowPosition="center"
               transitionProps={{ transition: "scale-y", duration: 600 }}
               shadow="md"
@@ -252,6 +257,7 @@ export function Navbar() {
                 <Button
                   size="md"
                   variant="white"
+                 
                   color="dark"
                   compact
                   className=" w-30 text-sm"
