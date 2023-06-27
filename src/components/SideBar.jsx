@@ -221,7 +221,7 @@ export function SideBar() {
               </p>
             </div>
           </div>
-          {/* <Code sx={{ fontWeight: 700 }}>v3.1.2</Code> */}
+        
         </Group>
       </Navbar.Section>
 
