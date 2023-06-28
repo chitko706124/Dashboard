@@ -858,8 +858,8 @@ const Dashboard = () => {
 
         <div className="  grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-3 pb-5">
           <div
-            style={{ height: "648px" }}
-            className=" w-full col-span-1 shadow rounded bg-white p-5"
+            // style={{ height: "648px" }}
+            className=" w-full  col-span-1 shadow rounded bg-white p-5"
           >
             <div className=" pb-5 flex items-center justify-between">
               <p className=" text-slate-700 text-sm font-bold">Calendar</p>
@@ -867,20 +867,19 @@ const Dashboard = () => {
                 <BiDotsHorizontalRounded />
               </span>
             </div>
-            <div className={` mt-20`}>
-              {/* <Group position="apart"> */}
+            <div className={` flex justify-center mt-10 lg:mt-20`}>
               <DatePicker
-                className={`${
-                  sideSelector
-                    ? "mantine-1emfdtu-header mantine-1ab4j2x-header"
-                    : ""
-                }`}
+                // className={`${
+                //   sideSelector
+                //     ? "mantine-1emfdtu-header mantine-1ab4j2x-header"
+                //     : ""
+                // }`}
+                className=""
                 allowDeselect
                 value={date}
                 onChange={setDate}
                 type="range"
               />
-              {/* </Group> */}
             </div>
           </div>
 

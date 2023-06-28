@@ -32,7 +32,7 @@ const Path = () => {
             <div
               className={`${
                 sideSelector
-                  ? " duration-500 sm:ml-[200px]"
+                  ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                   : " duration-500 ml-0"
               }`}
             >
@@ -41,14 +41,14 @@ const Path = () => {
           </RouteGuard>
         }
       />
-      {/* sm:ml-[200px] */}
+      {/* xl:ml-[15%] sm:ml-[200px] */}
       <Route
         path="/clients"
         element={
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -65,7 +65,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -79,7 +79,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -93,7 +93,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -107,7 +107,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -121,7 +121,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -135,7 +135,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -149,7 +149,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -163,7 +163,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -177,7 +177,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -191,7 +191,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -205,7 +205,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >
@@ -219,7 +219,7 @@ const Path = () => {
           <div
             className={`${
               sideSelector
-                ? " duration-500 sm:ml-[200px]"
+                ? " duration-500 xl:ml-[15%] sm:ml-[200px]"
                 : " duration-500 ml-0"
             }`}
           >

@@ -159,14 +159,17 @@ export function SideBar() {
     console.log(key);
   }, [authToken]);
 
+ 
+
   return (
+    // min-w-[200px]
     <div
       className={`
         ${
           token && path.pathname !== "/signin" && path.pathname !== "/signup"
             ? ` h-screen z-50 block bg-darkBlue text-white shadow
       ${sideSelector ? "sideAni  " : "  sideRight"}
-       p-5 !overflow-y-auto min-w-[200px]  !fixed   top-0 left-0 
+       p-5 !overflow-y-auto xl:w-[15%] w-[200px] !fixed   top-0 left-0 
        ${sideSelector ? "-left-[-0%]" : "-left-[120%]"}`
             : " hidden"
         }

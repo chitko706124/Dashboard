@@ -24,7 +24,7 @@ const Footer = () => {
         path.pathname !== "/signin" &&
         pathReaction === false &&
         path.pathname !== "/signup"
-          ? `footer ${ sideSelector ? " duration-500 sm:ml-[200px]" : " duration-500 ml-0" }  text-[13px] lg:text-[15px] h-[80px] max-h-[80px] z-10 md:max-h-[50.45px] mt-auto left-auto bottom-0 bg-white text-slate-400 shadow`
+          ? `footer ${ sideSelector ? " duration-500 xl:ml-[15%] sm:ml-[200px]" : " duration-500 ml-0" }  text-[13px] lg:text-[15px] h-[80px] max-h-[80px] z-10 md:max-h-[50.45px] mt-auto left-auto bottom-0 bg-white text-slate-400 shadow`
           : " hidden"
       } ${
         path.pathname === "/signin" || (path.pathname === "/signup" && "hidden")

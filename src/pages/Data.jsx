@@ -240,7 +240,7 @@ const Data = () => {
                     return (
                       <React.Fragment key={i} className="py-[50px]">
                         <img
-                          className=" lg:w-[5%] md:w-[50%] w-[63%] rounded-full h-[fit-content]"
+                          className=" w-[100px] rounded-full h-[fit-content]"
                           src={file}
                           id={i}
                           alt="Preview"

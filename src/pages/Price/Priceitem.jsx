@@ -30,7 +30,7 @@ const Priceitem = () => {
         id="package"
         className=" w-[100%] mt-[50px] flex flex-col lg:flex-row md:flex-row gap-3 justify-center"
       >
-        <div className="lg:w-[20%] md:w-[30%] w-[90%] mx-auto lg:mx-0 md:mx-0 bg-white shadow-lg flex flex-col justify-between items-center p-5 h-[70vh]">
+        <div className="lg:w-[20%] md:w-[30%] w-[90%] mx-auto lg:mx-0 md:mx-0 bg-white shadow-lg flex flex-col justify-between items-center p-5 ">
           <div className=" ">
             <p className=" text-[13px] font-semibold text-center">Free</p>
             <p className=" text-gray-600 text-[50px] text-center">$0</p>{" "}
@@ -56,7 +56,7 @@ const Priceitem = () => {
             </button>
           </div>
         </div>
-        <div className="lg:w-[20%] md:w-[30%] w-[90%] mx-auto lg:mx-0 md:mx-0 bg-white shadow-lg flex flex-col justify-between items-center p-5 h-[70vh]">
+        <div className="lg:w-[20%] md:w-[30%] w-[90%] mx-auto lg:mx-0 md:mx-0 bg-white shadow-lg flex flex-col justify-between items-center p-5 ">
           <div className=" ">
             <p className=" text-[13px] font-semibold text-center">Standard</p>
             <span className=" text-gray-600 text-[50px] text-center">
@@ -90,7 +90,7 @@ const Priceitem = () => {
             </button>
           </div>
         </div>
-        <div className="lg:w-[20%] md:w-[30%] w-[90%] mx-auto lg:mx-0 md:mx-0 bg-white shadow-lg flex flex-col justify-between items-center p-5 h-[70vh]">
+        <div className="lg:w-[20%] md:w-[30%] w-[90%] mx-auto lg:mx-0 md:mx-0 bg-white shadow-lg flex flex-col justify-between items-center p-5 ">
           <div className=" ">
             <p className=" text-[13px] font-semibold text-center">Plus</p>
             <span className=" text-gray-600 text-[50px] text-center">

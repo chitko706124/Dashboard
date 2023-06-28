@@ -38,10 +38,9 @@ const useStyles = createStyles((theme) => ({
     height: "69.09px",
     maxHeight: "69.09px",
     position: "relative",
-    
+
     [`@media (max-width: ${em(getBreakpointValue(theme.breakpoints.xs) - 1)})`]:
       {
-        
         width: "100%",
         margin: 0,
       },
@@ -67,7 +66,6 @@ const useStyles = createStyles((theme) => ({
     },
     [`@media (max-width: ${em(getBreakpointValue(theme.breakpoints.md) - 1)})`]:
       {
-        
         width: "50%",
         margin: 0,
       },
@@ -146,7 +144,7 @@ export function Navbar() {
   const [modalOpened, { open: modalOpen, close: modalClose }] =
     useDisclosure(false);
   const { classes } = useStyles();
-  
+
   const sideSelector = useSelector((state) => state.side.side);
   const path = useLocation();
   const dispatch = useDispatch();
@@ -159,13 +157,15 @@ export function Navbar() {
   if (trueFalse) {
     dispatch(ForPath(false));
   }
-  if (window.innerWidth < 641) {
-    useEffect(() => {
-      dispatch(sideToggler());
-    }, [path.pathname]);
-  }
+  // if (window.innerWidth < 641) {
+  //   useEffect(() => {
+  //     dispatch(sideToggler());
+  //   }, [path.pathname]);
+
+  //   // console.log("yes");
+  // }
   const token = Cookies.get("token");
- 
+
   useEffect(() => {
     setKey(authToken);
   }, [authToken]);
@@ -176,7 +176,6 @@ export function Navbar() {
   }, [opened]);
 
   return (
-
     <Header
       height={59}
       className={`${
@@ -187,7 +186,7 @@ export function Navbar() {
           ? `${`px-[10px] h-[69.09px] z-30 max-h-[69.09px]   !mb-0 relative block ${
               sideSelector === false
                 ? "duration-[500ms] ml-0"
-                : " sm:ml-[200px] duration-[500ms]"
+                : " xl:ml-[15%] sm:ml-[200px] duration-[500ms]"
             }`}`
           : "hidden"
       }`}
@@ -215,7 +214,6 @@ export function Navbar() {
                 ]}
               />
             </div>
-    
           </div>
 
           <div className=" col-start-3 col-span-3">
