@@ -86,7 +86,7 @@ const Analytics = () => {
 
   return (
     <>
-      <div className=" px-10 py-10   bg-primaryLight w-full overflow-x-hidden">
+      <div className=" px-3 md:px-10 py-10   bg-primaryLight w-full overflow-x-hidden">
         {/* Title Path */}
 
         <div className=" flex justify-between mb-4 items-center align-middle">

@@ -303,7 +303,9 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className={`  px-10 pt-5 pb-40 md:pb-32 bg-primaryLight   overflow-x-hidden`}>
+      <div
+        className={` px-3 md:px-10 pt-5 pb-40 md:pb-32 bg-primaryLight   overflow-x-hidden`}
+      >
         {/* <div className=" flex justify-between items-center">
           <p className=" block text-slate-600 text-xs md:text-lg h4 font-bold">
             Dashboard
@@ -924,7 +926,7 @@ const Dashboard = () => {
 
             <div>
               <Table>
-                <thead>
+                <thead className=" overflow-scroll w-full">
                   <tr>
                     <th>Source</th>
                     <th>Revenue</th>

@@ -151,12 +151,13 @@ export function Navbar() {
 
   const authToken = useSelector((state) => state.authSlice.token);
   const { pathReaction } = useSelector((state) => state.forPath);
-  console.log(pathReaction);
+  // console.log(pathReaction);
   const trueFalse = pathName.find((item) => item.name === path.pathname);
 
   if (trueFalse) {
     dispatch(ForPath(false));
   }
+
   // if (window.innerWidth < 641) {
   //   useEffect(() => {
   //     dispatch(sideToggler());
@@ -164,13 +165,14 @@ export function Navbar() {
 
   //   // console.log("yes");
   // }
+
   const token = Cookies.get("token");
 
   useEffect(() => {
     setKey(authToken);
   }, [authToken]);
 
-  console.log(token);
+  // console.log(token);
   useEffect(() => {
     dispatch(sideToggler());
   }, [opened]);
@@ -198,7 +200,7 @@ export function Navbar() {
             <div>
               <Burger opened={sideSelector} onClick={toggle} size="md" />
             </div>
-            <div>
+            <div className=" invisible lg:visible">
               <Autocomplete
                 className={classes.search}
                 placeholder="Search project..."

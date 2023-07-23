@@ -159,8 +159,6 @@ export function SideBar() {
     console.log(key);
   }, [authToken]);
 
- 
-
   return (
     // min-w-[200px]
     <div
@@ -191,8 +189,8 @@ export function SideBar() {
             />
           )}
           <div className=" flex justify-center items-center">
-            <div className=" flex justify-between  gap-3">
-              <svg
+            <div className=" flex justify-between gap-[14px] items-center">
+              {/* <svg
                 fill="#4a88eb"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -217,14 +215,19 @@ export function SideBar() {
                   d="M10,20c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5
               c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,20,10.1,20,10,20z"
                 ></path>
-              </svg>
-              <p className=" text-white h-1 font-bold">AppStack</p>
-              <p className=" text-white text-[20px] sm:hidden ">
-                <AiOutlineClose onClick={()=> dispatch(toggle())}/>
+              </svg> */}
+
+              <img className=" w-6 h-6" src={"/travel.png"} alt="" />
+
+              <p className=" text-white font-bold">Travel Tour </p>
+              <p className=" text-white text-[20px] sm:hidden">
+                <AiOutlineClose
+                  className=" shadow border rounded-full border-[#00000025] px-[2px] -me-5"
+                  onClick={() => dispatch(toggle())}
+                />
               </p>
             </div>
           </div>
-        
         </Group>
       </Navbar.Section>
 

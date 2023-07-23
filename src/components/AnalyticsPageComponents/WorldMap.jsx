@@ -952,6 +952,7 @@ const WorldMap = () => {
           },
         ],
       }}
+      zoomOnScroll={false}
       //   scaleColors={["#C8EEFF", "#0071A4"]}
     />
   );
