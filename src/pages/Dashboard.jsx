@@ -14,6 +14,7 @@ import {
   ResponsiveContainer,
   PieChart,
   Pie,
+  BarChart,
 } from "recharts";
 import { Button, Group, Menu, Table, Text, rem } from "@mantine/core";
 import { MdOutlineDateRange } from "react-icons/md";
@@ -306,60 +307,6 @@ const Dashboard = () => {
       <div
         className={` px-3 md:px-10 pt-5 pb-40 md:pb-32 bg-primaryLight   overflow-x-hidden`}
       >
-        {/* <div className=" flex justify-between items-center">
-          <p className=" block text-slate-600 text-xs md:text-lg h4 font-bold">
-            Dashboard
-          </p>
-          <div className=" flex items-center gap-3">
-            <Button
-              size="sm"
-              className=" w-30 text-black text-xs shadow rounded"
-              leftIcon={<MdOutlineDateRange size={10} />}
-              rightIcon={<AiOutlineArrowDown />}
-            >
-              Today
-            </Button>
-            <Button
-              styles={(theme) => ({
-                root: {
-                  backgroundColor: "#00acee",
-                  border: 0,
-                  width: rem(50),
-                  height: rem(32),
-                  paddingLeft: rem(20),
-                  paddingRight: rem(20),
-                  fontSize: rem(50),
-                  "&:not([data-disabled])": theme.fn.hover({
-                    backgroundColor: theme.fn.darken("#00acee", 0.05),
-                  }),
-                },
-              })}
-              className=" text-white bg-blue-500"
-            >
-              <CiFilter size={30} />
-            </Button>
-            <Button
-              styles={(theme) => ({
-                root: {
-                  backgroundColor: "#00acee",
-                  border: 0,
-                  width: rem(50),
-                  height: rem(32),
-                  paddingLeft: rem(20),
-                  paddingRight: rem(20),
-                  fontSize: rem(50),
-                  "&:not([data-disabled])": theme.fn.hover({
-                    backgroundColor: theme.fn.darken("#00acee", 0.05),
-                  }),
-                },
-              })}
-              className=" text-white bg-blue-500"
-            >
-              <FiRefreshCcw size={30} />
-            </Button>
-          </div>
-        </div> */}
-
         <div className=" flex justify-between my-4 items-center align-middle">
           <p className="hidden sm:block text-[#495057] text-xs md:text-lg font-bold">
             Dashboard
@@ -549,68 +496,6 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* <div className=" grid grid-cols-1 md:grid-cols-2 gap-5 py-5">
-        <div
-          style={{ height: "130.66px" }}
-          className=" grid grid-cols-2 p-5 rounded shadow bg-white"
-        >
-          <div>
-            <p className=" text-slate-600 text-md font-semibold">43</p>
-            <p className=" text-slate-500 text-xs font-medium py-2">
-              Pending Orders
-            </p>
-            <div className=" flex items-center gap-3">
-              <div>
-                <span
-                  style={{ fontSize: "8px" }}
-                  className=" text-red-500 bg-red-100 px-2 py-1 w-6 font-bold rounded"
-                >
-                  -4.25%
-                </span>
-              </div>
-              <p className=" text-slate-400 text-xs font-normal">
-                Since last week
-              </p>
-            </div>
-          </div>
-          <div className=" flex justify-end">
-            <div className=" w-10 h-10 bg-blue-100 text-blue-500 flex items-center justify-center rounded-full">
-              <FiShoppingBag />
-            </div>
-          </div>
-        </div>
-
-        <div
-          style={{ height: "130.66px" }}
-          className=" grid grid-cols-2 p-5 rounded shadow bg-white"
-        >
-          <div>
-            <p className=" text-slate-600 text-md font-semibold">$ 18.700</p>
-            <p className=" text-slate-500 text-xs font-medium py-2">
-              Total Earnings
-            </p>
-            <div className=" flex items-center gap-3">
-              <div>
-                <span
-                  style={{ fontSize: "8px" }}
-                  className=" text-green-500 bg-green-100 px-2 py-1 w-6 font-bold rounded"
-                >
-                  +8.65%
-                </span>
-              </div>
-              <p className=" text-slate-400 text-xs font-normal">
-                Since last week
-              </p>
-            </div>
-          </div>
-          <div className=" flex justify-end">
-            <div className=" w-10 h-10 bg-blue-100 text-blue-500 flex items-center justify-center rounded-full">
-              <LuDollarSign />
-            </div>
-          </div>
-        </div>
-      </div> */}
-
         <div className=" grid grid-cols-1 lg:grid-cols-3 gap-5 mb-5 py-10">
           <div
             style={{ height: "500px" }}
@@ -636,7 +521,6 @@ const Dashboard = () => {
                   reverseStackOrder={true}
                 >
                   <XAxis dataKey="name" />
-                  {/* <YAxis /> */}
                   <Tooltip />
                   <Legend />
                   <CartesianGrid stroke="#f5f5f5" />
@@ -859,10 +743,7 @@ const Dashboard = () => {
         </div>
 
         <div className="  grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-3 pb-5">
-          <div
-            // style={{ height: "648px" }}
-            className=" w-full  col-span-1 shadow rounded bg-white p-5"
-          >
+          <div className=" w-full  col-span-1 shadow rounded bg-white p-5">
             <div className=" pb-5 flex items-center justify-between">
               <p className=" text-slate-700 text-sm font-bold">Calendar</p>
               <span>
@@ -871,11 +752,6 @@ const Dashboard = () => {
             </div>
             <div className={` flex justify-center mt-10 lg:mt-20`}>
               <DatePicker
-                // className={`${
-                //   sideSelector
-                //     ? "mantine-1emfdtu-header mantine-1ab4j2x-header"
-                //     : ""
-                // }`}
                 className=""
                 allowDeselect
                 value={date}

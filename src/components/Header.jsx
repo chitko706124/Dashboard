@@ -151,20 +151,29 @@ export function Navbar() {
 
   const authToken = useSelector((state) => state.authSlice.token);
   const { pathReaction } = useSelector((state) => state.forPath);
-  // console.log(pathReaction);
   const trueFalse = pathName.find((item) => item.name === path.pathname);
 
   if (trueFalse) {
     dispatch(ForPath(false));
   }
 
-  // if (window.innerWidth < 641) {
-  //   useEffect(() => {
-  //     dispatch(sideToggler());
-  //   }, [path.pathname]);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 641) {
+        dispatch(sideToggler());
+      }
+    };
 
-  //   // console.log("yes");
-  // }
+    if (window.innerWidth < 641) {
+      dispatch(sideToggler());
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [path.pathname, dispatch]);
 
   const token = Cookies.get("token");
 
@@ -172,7 +181,6 @@ export function Navbar() {
     setKey(authToken);
   }, [authToken]);
 
-  // console.log(token);
   useEffect(() => {
     dispatch(sideToggler());
   }, [opened]);
