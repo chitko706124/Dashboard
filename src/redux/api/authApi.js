@@ -5,7 +5,7 @@ export const authApi = createApi({
   reducerPath: "authApi",
   tagTypes: ["auth"],
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://contact-app.mmsdev.site/api/v1",
+    baseUrl: "https://contact.sankyitar.store/api/v1",
   }),
   endpoints: (builder) => ({
     register: builder.mutation({

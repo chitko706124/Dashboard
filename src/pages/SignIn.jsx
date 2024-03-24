@@ -42,8 +42,8 @@ const SignIn = () => {
 
   const form = useForm({
     initialValues: {
-      email: "kyawkyaw@gmail.com",
-      password: "kyaw2000",
+      email: "ckk@gmail.com",
+      password: "123123123",
     },
 
     // functions will be used to validate values at corresponding key
